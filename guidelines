@@ -1,7 +1,8 @@
 Preparation step:
 You already have fasta file including the group of aa-sequence of genes. Also, the name of species is knownge.
 
- Example: 
+
+Example gene_of_interest.fasta : 
 >MELO3C005013.2
 MKKSEEANTASAVVVMGSTQPCAACKILRR........
 >MELO3C035136.2
@@ -11,7 +12,16 @@ MTGSGSPCGACKFLR..........
 
 Sp name: Cucumis_melo 
 So you can download cds file sequence: Cucumis_melo.Melonv4.cds.all.fa
+How to perpare you own cds fasta file:
+1- extract Gene_ID from your file:
+
+cat gene of interest.fasta| grep ">" > id.txt
+
+2- get  prepared_cds.fasta by seqkit
+
+seqkit grep -r -f id.txt Cucumis_melo.Melonv4.cds.all.fa -o result.fa
 
 You need: 
 1- aa-sequence of genes fasta file
-2- cds fasta file
+2- prepared cds fasta file
+3- gene name shoulf be matched with gene name in cds file.
