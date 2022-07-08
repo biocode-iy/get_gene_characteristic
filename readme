@@ -1,7 +1,18 @@
-The case
-You already have fasta file including the gene aa sequeancing. 
-## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+Preparation step:
+You already have fasta file including the group of aa-sequence of genes. Also, the name of species is knownge.
+
+Example:
+>MELO3C005013.2
+MKKSEEANTASAVVVMGSTQPCAACKILRR........
+>MELO3C035136.2
+MKEISGRKQGTSLSPC......
+>MELO3C012908.2
+MTGSGSPCGACKFLR..........
+
+Sp name: Cucumis_melo
+
+So you can download cds file sequence: Cucumis_melo.Melonv4.cds.all.fa
+
+You need:
+1- aa-sequence of genes fasta file
+2- cds fasta file
