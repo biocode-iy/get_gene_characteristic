@@ -4,17 +4,21 @@ library(seqinr)
 
 # get the characteristic of CDS from 
 
-seq <- read.fasta("out.fasta", seqtype = "AA", as.string = TRUE,  set.att = F)
-cds_SEQ <- read.fasta("result.fa", seqtype = "AA", as.string = TRUE,  set.att = F)
-cds_loc <- read.fasta("result.fa", seqtype = "AA", as.string = TRUE,  set.att = T)
+
+prepared.cds.all.fa
 
 
-GeneID  <- c()
-sizeaa <- c()
-MWkDa  <- c()
-PI <- c()
-ORF <- c()
-LOC <- c()
+seq <- read.fasta("gene_of_interest.fasta", seqtype = "AA", as.string = TRUE,  set.att = F)
+cds_SEQ <- read.fasta("prepared.cds.all.fa", seqtype = "AA", as.string = TRUE,  set.att = F)
+cds_loc <- read.fasta("prepared.cds.all.fa", seqtype = "AA", as.string = TRUE,  set.att = T)
+
+
+GeneID  <- c() 
+sizeaa <- c() #how many amino acids the gene sequence has 
+MWkDa  <- c() # Molecular Weight (kDa)
+PI <- c() # isoelectric point
+ORF <- c() #open reading frame base pair
+LOC <- c() #location of gene on genome
 
 i<-0
 for (var in seq ) {
@@ -49,5 +53,5 @@ df <- data.frame ("Gene_ID"  = GeneID,
                   "ORF_bp"= ORF,
                   "MW_kDa" = MWkDa,
                   "PI"= PI)
-
+#get the table as csv 
 write.csv(df,"df2.csv", row.names = FALSE)
