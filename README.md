@@ -13,7 +13,7 @@ MKEISGRKQGTSLSPC......
 >MELO3C012908.2
 MTGSGSPCGACKFLR..........
 ```
-#### Cucumis_melo 
+#### Name of species Cucumis_melo as an example.
 So you can download cds file sequence: Cucumis_melo.Melonv4.cds.all.fa
 ```
 Put in your mind:
