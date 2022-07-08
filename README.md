@@ -21,12 +21,12 @@ Gene name or gene id should be matched with gene name or gene id in cds file.
 ```
 
 How to perpare you own cds fasta file:
-1- extract Gene_ID from your file:
+
+1- Extract Gene_ID from your file
 ```
 cat gene of interest.fasta| grep ">" > id.txt
 ```
-2- get  prepared_cds.fasta by seqkit
-```
+2- Get prepared_cds.fasta by [seqkit](https://anaconda.org/bioconda/seqkit) 
 seqkit grep -r -f id.txt Cucumis_melo.Melonv4.cds.all.fa -o prepared.cds.all.fa 
 ```
 You need: 
