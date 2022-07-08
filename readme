@@ -1,7 +1,7 @@
-## Preparation step:
+<h2 align="left"> Preparation step: </h2>
 You already have fasta file including the group of aa-sequence of genes. Also, the name of species is knownge.
 
-### Example:
+<h3 align="left"> Example: </h3>
 >MELO3C005013.2
 MKKSEEANTASAVVVMGSTQPCAACKILRR........
 >MELO3C035136.2
@@ -9,10 +9,10 @@ MKEISGRKQGTSLSPC......
 >MELO3C012908.2
 MTGSGSPCGACKFLR..........
 
-## Sp name: Cucumis_melo
+<h2 align="left"> Sp name: Cucumis_melo </h2>
 
-### So you can download cds file sequence: Cucumis_melo.Melonv4.cds.all.fa
+<h3 align="left"> So you can download cds file sequence: Cucumis_melo.Melonv4.cds.all.fa </h3>
 
-## You need:
+<h2 align="left"> You need: </h2>
 1- aa-sequence of genes fasta file
 2- cds fasta file
