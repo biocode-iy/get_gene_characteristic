@@ -27,6 +27,7 @@ How to perpare you own cds fasta file:
 cat gene of interest.fasta| grep ">" > id.txt
 ```
 2- Get prepared_cds.fasta by [seqkit](https://anaconda.org/bioconda/seqkit) 
+```
 seqkit grep -r -f id.txt Cucumis_melo.Melonv4.cds.all.fa -o prepared.cds.all.fa 
 ```
 You need: 
