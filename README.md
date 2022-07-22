@@ -24,7 +24,7 @@ How to perpare you own cds fasta file:
 
 1- Extract Gene_ID from your file
 ```
-cat gene of interest.fasta| grep ">" > id.txt
+cat gene_of_interest.fasta | grep ">" > id.txt
 ```
 2- Get prepared_cds.fasta by [seqkit](https://anaconda.org/bioconda/seqkit) 
 ```
